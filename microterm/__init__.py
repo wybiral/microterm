@@ -5,7 +5,6 @@ import serial
 from serial.tools.list_ports import comports
 from serial.tools.miniterm import Miniterm
 import sys
-import keyboard
 
 VERSION = '0.0.1'
 
