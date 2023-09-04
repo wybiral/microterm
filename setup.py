@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='microterm',
-    version='0.0.1',
+    version='0.0.2',
     author='davy wybiral',
     author_email="davy.wybiral@gmail.com",
     description='CLI tool for interacting with MicroPython devices',

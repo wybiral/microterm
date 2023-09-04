@@ -2,11 +2,13 @@
 CLI tool for interacting with MicroPython devices
 
 ## Installation
+Install microterm from the command line using pip.
 ```
 pip install microterm
 ```
 
 ## Getting Started
+Launch the microterm terminal from the Python module.
 ```
 python -m microterm
 ```

@@ -6,7 +6,7 @@ from serial.tools.list_ports import comports
 from serial.tools.miniterm import Miniterm
 import sys
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 
 # used to restore stdout/stderr after miniterm
 STDOUT = sys.stdout
