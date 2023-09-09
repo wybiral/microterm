@@ -131,7 +131,7 @@ class Microterm(cmd.Cmd):
     version = VERSION
     intro = f'''Microterm {version} MicroPython terminal
 Type "help" for a list of commands.'''
-    prompt = '(Microterm)> '
+    prompt = 'Microterm> '
 
     def __init__(self, *args, **kwargs):
         super(Microterm, self).__init__(*args, **kwargs)
