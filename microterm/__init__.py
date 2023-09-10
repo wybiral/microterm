@@ -377,3 +377,12 @@ w=lambda x:f.write(a2b_base64(x))\n'''.encode())
         '''
         path = repr(arg)
         self.device.execute(f'os.rmdir({path})'.encode())
+
+    @connected
+    def do_uname(self, arg):
+        ''' Print system information about MicroPython device.
+            Usage: uname
+        '''
+        code = b'''print('MicroPython {3}; {4}'.format(*os.uname()))\n'''
+        data, err = self.device.execute(code)
+        print(data.decode().strip())
