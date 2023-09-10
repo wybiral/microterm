@@ -62,6 +62,7 @@ class MicroDevice:
         self.enter_raw()
         self.serial.flush()
         self.execute(b'import os\n')
+        self.execute(b'import platform\n')
         self.execute(b'from ubinascii import a2b_base64, b2a_base64\n')
 
     def disconnect(self):
@@ -383,6 +384,7 @@ w=lambda x:f.write(a2b_base64(x))\n'''.encode())
         ''' Print system information about MicroPython device.
             Usage: uname
         '''
-        code = b'''print('MicroPython {3}; {4}'.format(*os.uname()))\n'''
+        code = b'''print('MicroPython {3}; {4}'.format(*os.uname()))
+print(platform.platform())'''
         data, err = self.device.execute(code)
         print(data.decode().strip())
