@@ -22,7 +22,7 @@ Display command list.
 Microterm> help
 Commands ("help <command>" for details):
 cat  connect  disconnect  get   ls     mv   pwd     reboot  rmdir
-cd   devices  exit        help  mkdir  put  python  rm
+cd   devices  exit        help  mkdir  put  python  rm      uname
 ```
 
 Get help for a specific command.
